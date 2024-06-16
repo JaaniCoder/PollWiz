@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>PollWiz</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="pollwiz.png">
+    </head>
+<body>
+    <div id="header">
+        <h1>PollWiz - Every vote matters</h1>
+    </div>
+    <hr>
+
+    <div id="login">
+        <form action="api/login.php" method="post">
+            <h2>Login</h2>
+            <input type="number" name="mobile" placeholder="Your registered mobile no."> <br> <br>
+            <input type="password" name="password" placeholder="Your password"> <br> <br>
+            <select id="dropbox" name="role">
+                <option value="1">Voter</option>
+                <option value="2">Party</option>
+            </select> <br> <br>
+            <button id="loginbtn" type="submit">Login</button> <br> <br>
+            New User?  <a href="routes/register.html">Register Here</a>
+        </form>
+    </div>
+
+</body>
+
+</html>
